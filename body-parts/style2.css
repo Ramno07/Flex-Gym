@@ -2,13 +2,15 @@
   --bg: #0f1422;
   --bg-2: #1f1d35;
   --bg-3: #2a1d3a;
-  --panel: rgba(18, 22, 30, 0.88);
+  --panel: rgba(20, 25, 33, 0.82);
+  --panel-strong: rgba(28, 34, 46, 0.9);
   --border: rgba(153, 167, 190, 0.22);
   --text: #f2f4f8;
   --text-dim: #a8b0c0;
   --accent: #ff5c5c;
   --accent-2: #ff9d5c;
   --accent-3: #6ae0ff;
+  --accent-soft: rgba(255, 92, 92, 0.2);
   --display: "Bebas Neue", sans-serif;
   --body-font: "Work Sans", sans-serif;
 }
@@ -16,31 +18,19 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
-  background: linear-gradient(
-    135deg,
-    var(--bg) 0%,
-    var(--bg-2) 35%,
-    var(--bg-3) 70%,
-    var(--bg) 100%
-  );
+  background: linear-gradient(135deg, var(--bg) 0%, var(--bg-2) 35%, var(--bg-3) 70%, var(--bg) 100%);
   background-color: var(--bg);
   background-size: 220% 220%;
   color: var(--text);
   font-family: var(--body-font);
   line-height: 1.55;
-  overflow-x: hidden;
   animation: auroraShift 18s ease-in-out infinite alternate;
-  transition:
-    background 0.8s ease,
-    background-color 0.8s ease,
-    color 0.8s ease;
+  transition: background 0.8s ease, background-color 0.8s ease, color 0.8s ease;
 }
 
 @keyframes auroraShift {
@@ -50,6 +40,10 @@ body {
   100% {
     background-position: 100% 50%;
   }
+}
+.wrap {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
 }
 .site-header {
   position: sticky;
