@@ -51,7 +51,48 @@ body {
     background-position: 100% 50%;
   }
 }
-
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: rgba(15, 20, 34, 0.72);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+.header-inner {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: var(--text);
+  font: 22px var(--display);
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-3);
+  text-shadow: 0 0 18px rgba(106, 224, 255, 0.5);
+}
+.header-nav {
+  display: flex;
+  gap: 28px;
+}
+.header-nav a {
+  color: var(--text-dim);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.header-nav a:hover,
+.header-nav a:focus {
+  color: var(--text);
+  text-shadow: 0 0 14px rgba(255, 92, 92, 0.45);
+}
 .home-button {
   display: inline-block;
   margin-bottom: 28px;
