@@ -72,21 +72,6 @@ body {
   color: var(--accent-3);
   text-shadow: 0 0 18px rgba(106, 224, 255, 0.5);
 }
-.header-nav {
-  display: flex;
-  gap: 28px;
-}
-.header-nav a {
-  color: var(--text-dim);
-  font-size: 14px;
-  text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-.header-nav a:hover,
-.header-nav a:focus {
-  color: var(--text);
-  text-shadow: 0 0 14px rgba(255, 92, 92, 0.45);
-}
 .home-button {
   display: inline-block;
   margin-bottom: 28px;
