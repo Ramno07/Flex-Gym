@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8c499f8041.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="logo" href="./index.html">Flex Gym</a>
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/flexgymsport/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i
+              class="fa-brands fa-instagram fa-2xl"
+              style="color: rgb(255, 0, 0)"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap">
+          <p class="eyebrow">A visual training reference</p>
+          <h1 class="hero-title">
+            Know the muscle.<br /><span>Then train it right.</span>
+          </h1>
+          <p class="hero-sub">
+            Choose a region to see which muscles live there, what they do, and
+            how to train them with practical sets, reps, and form cues.
+          </p>
+        </div>
+      </section>
+
+      <section class="diagram-section">
+        <div class="wrap diagram-wrap">
+          <div class="diagram-panel">
+            <div class="view-toggle" role="tablist" aria-label="Body view">
+              <input
+                class="view-input"
+                type="radio"
+                name="body-view"
+                id="front-tab"
+                checked
+              /><label class="view-btn" for="front-tab">Front</label>
+              <input
+                class="view-input"
+                type="radio"
+                name="body-view"
+                id="back-tab"
+              /><label class="view-btn" for="back-tab">Back</label>
+            </div>
+            <div class="figure-stage">
+              <svg
+                class="body-svg front-body"
+                viewBox="0 0 300 500"
+                role="img"
+                aria-label="Front view of the body"
+              >
+                <circle class="body-outline" cx="150" cy="40" r="30"></circle>
+                <rect
+                  class="body-outline"
+                  x="138"
+                  y="66"
+                  width="24"
+                  height="18"
+                ></rect>
+                <a href="./body-parts/shoulders.html">
+                  <circle class="hotspot" cx="91" cy="102" r="24"></circle>
+                  <circle class="hotspot" cx="209" cy="102" r="24"></circle>
+                </a>
+                <a href="./body-parts/chest.html">
+                  <path
+                    class="hotspot"
+                    d="M108 94C119 84 136 85 149 96V144C131 143 117 136 108 124Z"
+                  ></path>
+                  <path
+                    class="hotspot"
+                    d="M192 94C181 84 164 85 151 96V144C169 143 183 136 192 124Z"
+                  ></path>
+                </a>
+                <a href="./body-parts/arms.html">
+                  <path
+                    class="hotspot"
+                    d="M62 112C70 108 82 111 88 119L88 184C86 198 80 206 70 208C62 198 58 186 58 172V128C58 120 59 116 62 112Z"
+                  ></path>
+                  <path
+                    class="hotspot"
+                    d="M238 112C230 108 218 111 212 119L212 184C214 198 220 206 230 208C238 198 242 186 242 172V128C242 120 241 116 238 112Z"
+                  ></path>
+                </a>
+                <a href="./body-parts/core.html">
+                  <rect
+                    class="hotspot"
+                    x="116"
+                    y="148"
+                    width="68"
+                    height="92"
+                    rx="10"
+                  ></rect>
+                  <rect
+                    class="ab-panel"
+                    x="121"
+                    y="154"
+                    width="24"
+                    height="18"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    class="ab-panel"
+                    x="155"
+                    y="154"
+                    width="24"
+                    height="18"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    class="ab-panel"
+                    x="121"
+                    y="178"
+                    width="24"
+                    height="18"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    class="ab-panel"
+                    x="155"
+                    y="178"
+                    width="24"
+                    height="18"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    class="ab-panel"
+                    x="121"
+                    y="202"
+                    width="24"
+                    height="18"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    class="ab-panel"
+                    x="155"
+                    y="202"
+                    width="24"
+                    height="18"
+                    rx="5"
+                  ></rect>
+                  <line
+                    class="seg-line"
+                    x1="150"
+                    y1="148"
+                    x2="150"
+                    y2="240"
+                  ></line>
+                  <line
+                    class="seg-line"
+                    x1="116"
+                    y1="172"
+                    x2="184"
+                    y2="172"
+                  ></line>
+                  <line
+                    class="seg-line"
+                    x1="116"
+                    y1="196"
+                    x2="184"
+                    y2="196"
+                  ></line>
+                </a>
+                <a href="./body-parts/legs.html">
+                  <path
+                    class="hotspot"
+                    d="M102 244h46v142h-4v94h-38v-88h-4zm50 0h46v148h-4v88h-38v-94h-4z"
+                  ></path>
+                </a>
+              </svg>
+              <svg
+                class="body-svg back-body"
+                viewBox="0 0 300 500"
+                role="img"
+                aria-label="Back view of the body"
+              >
+                <circle class="body-outline" cx="150" cy="40" r="30"></circle>
+                <rect
+                  class="body-outline"
+                  x="138"
+                  y="66"
+                  width="24"
+                  height="18"
+                ></rect>
+                <a href="./body-parts/shoulders.html">
+                  <circle class="hotspot" cx="91" cy="102" r="24"></circle>
+                  <circle class="hotspot" cx="209" cy="102" r="24"></circle>
+                </a>
+                <a href="./body-parts/back.html">
+                  <path
+                    class="hotspot"
+                    d="M96 88C108 78 126 80 140 92L150 104L160 92C174 80 192 78 204 88C201 116 193 142 184 164C177 181 174 198 177 216L184 244C173 251 162 254 150 254C138 254 127 251 116 244L123 216C126 198 123 181 116 164C107 142 99 116 96 88Z"
+                  ></path>
+                  <line
+                    class="seg-line"
+                    x1="150"
+                    y1="86"
+                    x2="150"
+                    y2="252"
+                  ></line>
+                  <path
+                    class="seg-line"
+                    d="M112 140C126 145 138 147 150 148C162 147 174 145 188 140"
+                  ></path>
+                  <path
+                    class="seg-line"
+                    d="M150 104C139 114 127 120 115 126C120 145 132 161 143 174"
+                  ></path>
+                  <path
+                    class="seg-line"
+                    d="M150 104C161 114 173 120 185 126C180 145 168 161 157 174"
+                  ></path>
+                  <path
+                    class="seg-line"
+                    d="M116 165C127 174 137 188 140 205M184 165C173 174 163 188 160 205"
+                  ></path>
+                </a>
+                <a href="./body-parts/arms.html">
+                  <path
+                    class="hotspot"
+                    d="M62 112C70 108 82 111 88 119L88 184C86 198 80 206 70 208C62 198 58 186 58 172V128C58 120 59 116 62 112Z"
+                  ></path>
+                  <path
+                    class="hotspot"
+                    d="M238 112C230 108 218 111 212 119L212 184C214 198 220 206 230 208C238 198 242 186 242 172V128C242 120 241 116 238 112Z"
+                  ></path>
+                </a>
+                <a href="./body-parts/legs.html">
+                  <path
+                    class="hotspot"
+                    d="M102 254h46v132h-4v94h-38v-88h-4zm50 0h46v138h-4v88h-38v-94h-4z"
+                  ></path>
+                </a>
+              </svg>
+            </div>
+            <p class="figure-hint">
+              Select a highlighted region to open its guide.
+            </p>
+          </div>
+          <nav class="region-list" aria-label="Body regions">
+            <a class="region-chip" href="./body-parts/chest.html">Chest</a
+            ><a class="region-chip" href="./body-parts/back.html">Back</a
+            ><a class="region-chip" href="./body-parts/shoulders.html"
+              >Shoulders</a
+            ><a class="region-chip" href="./body-parts/arms.html">Arms</a
+            ><a class="region-chip" href="./body-parts/core.html">Core</a
+            ><a class="region-chip" href="./body-parts/legs.html">Legs</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
